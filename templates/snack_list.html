@@ -7,5 +7,6 @@
         {% for snack in object_list %}
             <li><a href = "{% url 'snack_detail' snack.pk %}">{{snack.name}} - {{snack.description}} </a></li>
         {% endfor %}
+
     </ul>
 {% endblock %}
